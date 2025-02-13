@@ -1,0 +1,216 @@
+{
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.default.cppStandard": "c++20",
+    "remote.SSH.remotePlatform": {
+        "10.158.15.107": "linux",
+        "10.158.4.64": "linux",
+        "toan2-cao-honda255.vbee.lge.com": "linux",
+        "toan2-cao-tsu255.vbee.lge.com": "linux",
+        "toan2-cao-target.vbee.lge.com": "linux",
+        "hau2-nguyen-vcm.vbee.lge.com": "linux",
+        "hoc2nguyen-vcm-2023-1.vbee.lge.com": "linux",
+        "hoc2nguyen-vcm-common-tiger.vbee.lge.com": "linux",
+        "tung4nguyen-iconicc.vbee.lge.com": "linux",
+        "10.218.144.207": "linux",
+        "10.218.144.207(tung)": "linux"
+    },
+    "workbench.startupEditor": "none",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        // {
+        // "before": ["j", "k"],
+        // "after": ["<Esc>", "l"]
+        // },
+        {
+            "before": ["<C-a>"],
+            "after": ["<esc>", "g", "g", "V", "G"]
+        },
+        {
+            "before": ["<C-m>"],
+            "after": ["<enter>"]
+        },
+        {
+            "before": ["<C-j>"],
+            "after": ["<down>"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["<up>"]
+        },
+        {
+            "before": ["<C-l>"],
+            "after": ["<right>"]
+        },
+        {
+            "before": ["<C-n>"],
+            "after": ["<backspace>"]
+        },
+        {
+            "before": ["<C-h>"],
+            "after": ["<left>"]
+        },
+        {
+            "before": ["<C-i>"],
+            "after": ["<esc>", "I"]
+        },
+        {
+            "before": ["<C-o>"],
+            "after": ["<esc>", "A"],
+        }   
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["d"],
+            "after": ["\"", "_", "d"],
+        },
+        {
+            "before": ["<C-a>"],
+            "after": ["<esc>", "g", "g", "V", "G"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-a>"],
+            "after": ["g", "g", "V", "G"]
+        },
+        {
+            "before": ["d"],
+            "after": ["\"", "_", "d"],
+        },
+        {
+        "before": ["<BS>"],
+        "after": ["a", "<BS>"],
+        },
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["lineBreakInsert"],
+            "silent": true
+        },
+        {
+            "before": ["C-j"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        }, // moveLineDown
+        {
+            "before": ["C-k"],
+            "commands": ["editor.action.moveLinesUpAction"]
+        }, // movlineup
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+
+        // "<C-a>": false,
+        "<C-f>": false,
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-s>": false,
+        "<C-x>": false,
+        "<C-b>": false,
+        "<C-p>": false,
+        // "<BS>": false,
+    },
+    "tabnine.experimentalAutoImports": true,
+    "terminal.integrated.automationProfile.linux": {},
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "cmake.configureOnOpen": true,
+    "workbench.colorTheme": "Default Light+",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "zig": "zig run",
+        "cpp": "cd $dir && g++ -DON_PC --std=c++17 -ID:\\CP $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runghc",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName",
+        "mojo": "mojo run",
+        "erlang": "escript",
+        "spwn": "spwn build",
+        "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+        "gleam": "gleam run -m $fileNameWithoutExt"
+    },
+    "code-runner.saveAllFilesBeforeRun": true,
+    "vim.statusBarColors.visualline": "",
+    "vim.digraphs": {
+    
+    },
+    "code-runner.clearPreviousOutput": true,
+    "advancedNewFile.convenienceOptions": [
+
+        "last",
+        "current",
+        "root"
+    ],
+    "advancedNewFile.exclude": {
+    
+    },
+    "advancedNewFile.showInformationMessages": false,
+    "git.confirmSync": false,
+    "vim.statusBarColors.replace": "",
+    "vim.commandLineModeKeyBindingsNonRecursive": [
+    
+    ],
+    "editor.codeActionsOnSave": {
+    
+    },
+    "editor.dropIntoEditor.preferences": [
+    
+    ]
+}
